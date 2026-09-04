@@ -20,6 +20,12 @@
 
 <body>
 
+  <!-- Glowing Rainbow Scroll Progress Bar -->
+  <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+
+  <!-- Interactive Ambient Sparkles & Cursor Magic -->
+  <canvas id="sparkleCanvas" class="sparkle-canvas"></canvas>
+
   <!-- Preloader -->
   <div id="preloader">
     <div class="loader-ring"></div>
@@ -340,6 +346,9 @@
       >
 
         <div class="universe-stars"></div>
+        <div class="shooting-star s-star-1"></div>
+        <div class="shooting-star s-star-2"></div>
+        <div class="shooting-star s-star-3"></div>
 
         <div class="balloon b1"></div>
         <div class="balloon b2"></div>
@@ -409,6 +418,9 @@
           <div class="flame f1"></div>
           <div class="flame f2"></div>
           <div class="flame f3"></div>
+          <div class="candle-smoke sm1"></div>
+          <div class="candle-smoke sm2"></div>
+          <div class="candle-smoke sm3"></div>
 
           <div class="candle-line">
             <i></i>
@@ -573,8 +585,10 @@
 
       <div class="music-card">
 
-        <div class="record">
-          <span>♫</span>
+        <div class="record-container" id="recordContainer">
+          <div class="record">
+            <span>♫</span>
+          </div>
         </div>
 
         <div>
@@ -635,8 +649,15 @@
 
             <div class="track">
 
-              <div class="track-name">
-                Birthday Music
+              <div class="track-header">
+                <div class="track-name">
+                  Birthday Music
+                </div>
+                <div class="equalizer" id="equalizer">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+                </div>
               </div>
 
               <div class="progress">
