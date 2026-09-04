@@ -1,1335 +1,2316 @@
+
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="theme-color" content="#ff4f91">
+
 
   <title>Happy Birthday, Deepika 🎀</title>
 
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+
   <link
+
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+
     rel="stylesheet"
+
   >
 
+
   <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
+
   <!-- Glowing Rainbow Scroll Progress Bar -->
+
   <div id="scrollProgressBar" class="scroll-progress-bar"></div>
 
+
   <!-- Interactive Ambient Sparkles & Cursor Magic -->
+
   <canvas id="sparkleCanvas" class="sparkle-canvas"></canvas>
 
+
   <!-- Preloader -->
+
   <div id="preloader">
+
     <div class="loader-ring"></div>
+
     <span>Preparing your surprise…</span>
+
   </div>
+
 
   <!-- Music Start Prompt -->
+
   <div
+
     id="musicStartPrompt"
+
     class="music-start-prompt"
+
     role="button"
+
     tabindex="0"
+
     aria-label="Tap anywhere to start birthday music"
+
   >
+
     <div class="music-start-icon">♫</div>
+
     <strong>Tap anywhere to begin</strong>
+
     <span>Birthday music will start automatically 🎵</span>
+
   </div>
 
+
   <!-- Navigation -->
+
   <nav class="nav">
 
+
     <a class="brand" href="#home">
+
       D <span>✦</span>
+
     </a>
 
+
     <button class="menu-toggle" aria-label="Open menu">
+
       ☰
+
     </button>
+
 
     <div class="nav-links">
 
+
       <a href="#home">Home</a>
+
       <a href="#birthday">Birthday</a>
+
       <a href="#letter">Letter</a>
+
       <a href="#moments">Moments</a>
+
       <a href="#wishes">Wishes</a>
+
       <a href="#music">Music</a>
 
-      <button
-        class="customize-btn creator-entry"
-        id="creatorEntry"
-      >
-        Creator Mode 🔐
-      </button>
 
       <button
-        class="icon-btn"
-        id="themeToggle"
-        aria-label="Toggle theme"
+
+        class="customize-btn creator-entry"
+
+        id="creatorEntry"
+
       >
-        ☾
+
+        Creator Mode 🔐
+
       </button>
+
+
+      <button
+
+        class="icon-btn"
+
+        id="themeToggle"
+
+        aria-label="Toggle theme"
+
+      >
+
+        ☾
+
+      </button>
+
 
     </div>
+
   </nav>
 
 
+
   <!-- Main Content -->
+
   <main>
 
+
     <!-- HOME -->
+
     <section id="home" class="hero section">
+
 
       <div class="hero-glow"></div>
 
+
       <div
+
         class="particle-field"
+
         id="heroParticles"
+
       ></div>
+
 
       <div class="hero-content">
 
+
         <div class="eyebrow">
+
           A little birthday surprise
+
         </div>
 
+
         <h1>
+
           Happy Birthday,<br>
+
           <span id="heroName">Deepika</span>
+
           <b>🎂</b>
+
         </h1>
 
+
         <p>
+
           Today is all about celebrating you and the wonderful moments ahead.
+
         </p>
 
+
         <button
+
           class="primary-btn"
+
           id="openSurprise"
+
         >
+
           Open Your Birthday Surprise
+
           <span>✦</span>
+
         </button>
 
+
       </div>
+
 
       <div class="scroll-hint">
+
         Scroll to explore <span>↓</span>
+
       </div>
 
+
     </section>
+
 
 
     <!-- BIRTHDAY -->
+
     <section id="birthday" class="section intro">
 
+
       <div class="section-label">
+
         01 · Birthday
+
       </div>
+
 
       <div class="intro-grid">
 
+
         <div>
+
           <h2>
+
             A special day for<br>
+
             <em>someone special.</em> 🌸
+
           </h2>
+
         </div>
+
 
         <div class="intro-copy">
 
-          <p>
-            Today is a day to celebrate you, your journey, your dreams,
-            and all the wonderful things waiting ahead.
-          </p>
 
           <p>
-            May this birthday bring you countless smiles, beautiful memories,
-            exciting opportunities, and many reasons to look forward to
-            the year ahead.
+
+            Today is a day to celebrate you, your journey, your dreams,
+
+            and all the wonderful things waiting ahead.
+
           </p>
+
+
+          <p>
+
+            May this birthday bring you countless smiles, beautiful memories,
+
+            exciting opportunities, and many reasons to look forward to
+
+            the year ahead.
+
+          </p>
+
 
         </div>
 
+
       </div>
+
 
       <div class="countdown-card">
 
+
         <div>
+
           <span class="count-label">
+
             COUNTING DOWN TO YOUR SPECIAL DAY
+
           </span>
 
+
           <h3 id="countTitle">
+
             Your next birthday
+
           </h3>
+
         </div>
+
 
         <div
+
           class="countdown"
+
           id="countdown"
+
         >
 
+
           <div>
+
             <strong>00</strong>
+
             <span>Days</span>
+
           </div>
+
 
           <i>:</i>
 
+
           <div>
+
             <strong>00</strong>
+
             <span>Hours</span>
+
           </div>
+
 
           <i>:</i>
 
+
           <div>
+
             <strong>00</strong>
+
             <span>Minutes</span>
+
           </div>
+
 
           <i>:</i>
 
+
           <div>
+
             <strong>00</strong>
+
             <span>Seconds</span>
+
           </div>
+
 
         </div>
+
 
       </div>
 
+
     </section>
+
 
 
     <!-- LETTER -->
+
     <section
+
       id="letter"
+
       class="section letter-section"
+
     >
 
+
       <div class="section-label">
+
         02 · A little note
+
       </div>
+
 
       <div class="letter-card">
 
+
         <div class="letter-top">
 
+
           <span class="seal">
+
             D
+
           </span>
 
+
           <button
+
             class="outline-btn"
+
             id="editLetter"
+
           >
+
             Edit Message
+
           </button>
 
+
         </div>
+
 
         <div class="letter-body">
 
+
           <p class="small-script">
+
             A birthday note
+
           </p>
 
+
           <h2 id="letterTitle">
+
             Dear Deepika,
+
           </h2>
+
 
           <div id="letterMessage">
 
+
             <div id="letterMessage">
 
+
     <p>
+
         Happy Birthday, Deepika! 🎂✨
+
     </p>
 
+
     <p>
+
         Today, I don't want to disturb you or take too much
+
         of your time.
+
     </p>
 
+
     <p>
+
         I just wanted to wish you on your special day.
+
     </p>
 
+
     <p>
+
         Please don't think anything else about this message.
+
         There is no hidden expectation, no need to reply,
+
         and nothing you have to say back.
+
     </p>
 
+
     <p>
+
         I simply wanted to take a moment to wish you well.
+
     </p>
 
+
     <p>
+
         I hope you have a beautiful day filled with genuine
+
         smiles, peaceful moments, good conversations, and
+
         people who make your day a little brighter.
+
     </p>
 
+
     <p>
+
         May this new year of your life bring you closer to
+
         your dreams and give you many opportunities to
+
         become the person you want to be.
+
     </p>
+
 
 </div>
 
+
 <p class="signature">
+
   — <span id="senderName">Unknown</span>
+
 </p>
+
 
         </div>
 
+
       </div>
 
+
     </section>
+
 
 
     <!-- MOMENTS -->
+
     <section
+
       id="moments"
+
       class="section moments"
+
     >
 
+
       <div class="section-label">
+
         03 · Moments
+
       </div>
+
 
       <div class="section-heading">
 
+
         <div>
 
+
           <h2>
+
             A little birthday
+
             <em>universe.</em> ✨
+
           </h2>
 
+
           <p>
+
             No photos needed. Add yours anytime.
+
           </p>
+
 
         </div>
 
+
         <label class="upload-btn">
+
           + Add Your Photos
+
           <input
+
             id="photoInput"
+
             type="file"
+
             accept="image/*"
+
             multiple
+
             hidden
+
           >
+
         </label>
+
 
       </div>
 
+
       <div
+
         id="universe"
+
         class="birthday-universe"
+
       >
 
+
         <div class="universe-stars"></div>
+
         <div class="shooting-star s-star-1"></div>
+
         <div class="shooting-star s-star-2"></div>
+
         <div class="shooting-star s-star-3"></div>
 
+
         <div class="balloon b1"></div>
+
         <div class="balloon b2"></div>
+
         <div class="balloon b3"></div>
 
+
         <div class="gift gift-left">
+
           🎁
+
         </div>
 
+
         <div class="gift gift-right">
+
           🎁
+
         </div>
+
 
         <div class="cake-scene">
 
+
           <div class="cake">
 
+
             <div class="candle">
+
               <span></span>
+
             </div>
+
 
             <div class="candle c2">
+
               <span></span>
+
             </div>
 
+
             <div class="candle c3">
+
               <span></span>
+
             </div>
+
 
             <div class="cake-top"></div>
 
+
             <div class="cake-body">
+
               <i></i>
+
               <i></i>
+
               <i></i>
+
             </div>
+
 
           </div>
 
+
           <h3 id="universeName">
+
             Deepika ✨
+
           </h3>
 
+
           <p>
+
             Wishing you a beautiful birthday and an amazing year ahead.
+
           </p>
+
 
         </div>
 
+
       </div>
 
+
       <div
+
         id="gallery"
+
         class="gallery hidden"
+
       ></div>
 
+
     </section>
+
 
 
     <!-- MAKE A WISH -->
+
     <section class="section cake-section">
+
 
       <div class="wish-cake-card">
 
+
         <div class="cake-illustration">
 
+
           <div class="flame f1"></div>
+
           <div class="flame f2"></div>
+
           <div class="flame f3"></div>
+
           <div class="candle-smoke sm1"></div>
+
           <div class="candle-smoke sm2"></div>
+
           <div class="candle-smoke sm3"></div>
 
+
           <div class="candle-line">
+
             <i></i>
+
             <i></i>
+
             <i></i>
+
           </div>
 
+
           <div class="cake-layer top"></div>
+
           <div class="cake-layer middle"></div>
+
           <div class="cake-layer bottom"></div>
 
+
         </div>
+
 
         <div>
 
+
           <div class="section-label">
+
             Make a wish
+
           </div>
 
+
           <h2>
+
             Close your eyes.<br>
+
             <em>Make it count.</em> ✨
+
           </h2>
 
+
           <button
+
             class="primary-btn"
+
             id="wishBtn"
+
           >
+
             Make a Wish ✨
+
           </button>
 
+
           <p
+
             id="wishResult"
+
             class="wish-result"
+
           ></p>
+
 
         </div>
 
+
       </div>
 
+
     </section>
+
 
 
     <!-- WISHES -->
+
     <section
+
       id="wishes"
+
       class="section wishes-section"
+
     >
 
+
       <div class="section-label">
+
         04 · Wishes
+
       </div>
+
 
       <div class="section-heading centered">
 
+
         <h2>
+
           Wishes <em>for you.</em> 🌷
+
         </h2>
 
+
         <p>
+
           Little reminders for a wonderful year ahead.
+
         </p>
 
+
       </div>
+
 
       <div class="wish-grid">
 
+
         <article>
+
           <span>01</span>
+
           <h3>Happiness</h3>
+
           <p>
+
             May your days always have plenty of reasons to smile.
+
           </p>
+
         </article>
 
+
         <article>
+
           <span>02</span>
+
           <h3>Success</h3>
+
           <p>
+
             May every goal you work toward become a beautiful achievement.
+
           </p>
+
         </article>
 
+
         <article>
+
           <span>03</span>
+
           <h3>Adventure</h3>
+
           <p>
+
             May the coming year bring exciting experiences and opportunities.
+
           </p>
+
         </article>
 
+
         <article>
+
           <span>04</span>
+
           <h3>Memories</h3>
+
           <p>
+
             May you create countless moments worth remembering.
+
           </p>
+
         </article>
 
+
         <article>
+
           <span>05</span>
+
           <h3>Dreams</h3>
+
           <p>
+
             May you get closer to everything you dream about.
+
           </p>
+
         </article>
+
 
       </div>
 
+
     </section>
+
 
 
     <!-- WISH WALL -->
+
     <section class="section wish-wall-section">
+
 
       <div class="wish-wall-card">
 
+
         <div class="section-label">
+
           05 · Wish wall
+
         </div>
 
+
         <h2>
+
           Birthday Wish Wall ✨
+
         </h2>
 
+
         <p>
+
           Leave a short birthday wish.
+
         </p>
+
 
         <div class="wish-form">
 
+
           <input
+
             id="wishInput"
+
             maxlength="120"
+
             placeholder="Write a birthday wish…"
+
           >
 
+
           <button
+
             class="primary-btn"
+
             id="addWish"
+
           >
+
             Add Wish
+
           </button>
+
 
         </div>
 
+
         <div
+
           id="wishWall"
+
           class="wish-wall"
+
         ></div>
+
 
       </div>
 
+
     </section>
+
 
 
     <!-- MUSIC -->
+
     <section
+
       id="music"
+
       class="section music-section"
+
     >
+
 
       <div class="music-card">
 
+
         <div class="record-container" id="recordContainer">
+
           <div class="record">
+
             <span>♫</span>
+
           </div>
+
         </div>
+
 
         <div>
 
+
           <div class="section-label">
+
             06 · Music
+
           </div>
+
 
           <h2>
+
             Press play. Let the moment begin. 🎵
+
           </h2>
 
+
           <p>
+
             Add your own birthday music below.
+
             The selected track can be played immediately.
+
           </p>
 
+
           <label class="music-upload">
+
             ＋ Add Music
 
+
             <input
+
               id="musicInput"
+
               type="file"
+
               accept="audio/*"
+
               hidden
+
             >
+
           </label>
 
+
           <!-- CORRECT MUSIC PATH -->
+
           <div
+
             class="selected-track"
+
             id="selectedTrack"
+
           >
+
             Default: website.mp3
+
           </div>
 
+
           <!-- CORRECT AUDIO PATH -->
+
           <audio
+
             id="audio"
+
             preload="auto"
+
             loop
+
             playsinline
+
           >
+
             <source
+
               src="website.mp3"
+
               type="audio/mpeg"
+
             >
+
           </audio>
+
 
           <div class="player">
 
+
             <button
+
               id="playBtn"
+
               class="play-btn"
+
             >
+
               ▶
+
             </button>
+
 
             <div class="track">
 
+
               <div class="track-header">
+
                 <div class="track-name">
+
                   Birthday Music
+
                 </div>
+
                 <div class="equalizer" id="equalizer">
+
                   <span></span><span></span><span></span><span></span>
+
                   <span></span><span></span><span></span><span></span>
+
                   <span></span><span></span><span></span><span></span>
+
                 </div>
+
               </div>
 
+
               <div class="progress">
+
                 <span id="progressBar"></span>
+
               </div>
+
 
             </div>
 
+
             <button
+
               id="muteBtn"
+
               class="mini-btn"
+
             >
+
               🔊
+
             </button>
+
 
           </div>
 
+
         </div>
+
 
       </div>
 
+
     </section>
+
 
 
     <!-- FINAL -->
+
     <section class="final section">
+
 
       <div class="final-glow"></div>
 
+
       <div class="section-label">
+
         One last thing
+
       </div>
+
 
       <h2>
+
         Once again,<br>
+
         <em>
+
           Happy Birthday,
+
           <span id="finalName">Deepika</span>!
+
         </em>
+
         🎂🎀
+
       </h2>
 
+
       <p>
+
         Wishing you a wonderful year filled with happiness,
+
         success, unforgettable memories, and plenty of reasons
+
         to smile.
+
       </p>
 
+
       <div class="final-sign">
+
         — <span id="finalSender">Mohan</span>
+
       </div>
 
+
       <button
+
         class="outline-btn light"
+
         id="replay"
+
       >
+
         Replay the Birthday Surprise ✨
+
       </button>
 
+
     </section>
+
 
   </main>
 
 
+
   <!-- Floating Music Icon -->
+
   <div
+
     class="music-float"
+
     id="musicFloat"
+
   >
+
     🎵
+
   </div>
+
 
 
   <!-- LETTER MODAL -->
+
   <div
+
     class="modal-backdrop"
+
     id="letterModal"
+
   >
+
 
     <div class="modal">
 
+
       <button
+
         class="close"
+
         data-close="letterModal"
+
       >
+
         ×
+
       </button>
 
+
       <div class="section-label">
+
         Edit your note
+
       </div>
 
+
       <h2>
+
         Personalize the message 💌
+
       </h2>
 
+
       <label>
+
         Name
+
         <input id="editName">
+
       </label>
 
+
       <label>
+
         Personal Message
+
         <textarea
+
           id="editMessage"
+
           rows="8"
+
         ></textarea>
+
       </label>
 
+
       <label>
+
         From
+
         <input id="editSender">
+
       </label>
+
 
       <div class="modal-actions">
 
-        <button
-          class="outline-btn"
-          id="resetLetter"
-        >
-          Reset
-        </button>
 
         <button
-          class="primary-btn"
-          id="saveLetter"
+
+          class="outline-btn"
+
+          id="resetLetter"
+
         >
-          Save Message
+
+          Reset
+
         </button>
+
+
+        <button
+
+          class="primary-btn"
+
+          id="saveLetter"
+
+        >
+
+          Save Message
+
+        </button>
+
 
       </div>
 
+
     </div>
 
+
   </div>
+
 
 
   <!-- CUSTOMIZE MODAL -->
+
   <div
+
     class="modal-backdrop"
+
     id="customizeModal"
+
   >
+
 
     <div class="modal">
 
+
       <button
+
         class="close"
+
         data-close="customizeModal"
+
       >
+
         ×
+
       </button>
 
+
       <div class="section-label">
+
         Customize
+
       </div>
 
+
       <h2>
+
         Make it yours ✨
+
       </h2>
 
+
       <label>
+
         Birthday Name
+
         <input id="customName">
+
       </label>
 
+
       <label>
+
         Sender Name
+
         <input id="customSender">
+
       </label>
 
+
       <label>
+
         Birthday Date
+
         <input
+
           id="customDate"
+
           type="date"
+
         >
+
       </label>
+
 
       <div class="modal-actions">
 
-        <button
-          class="outline-btn"
-          id="resetAll"
-        >
-          Reset
-        </button>
 
         <button
-          class="primary-btn"
-          id="saveCustom"
+
+          class="outline-btn"
+
+          id="resetAll"
+
         >
-          Save Changes
+
+          Reset
+
         </button>
+
+
+        <button
+
+          class="primary-btn"
+
+          id="saveCustom"
+
+        >
+
+          Save Changes
+
+        </button>
+
 
       </div>
 
+
     </div>
 
+
   </div>
+
 
 
   <!-- Toast -->
+
   <div
+
     class="toast"
+
     id="toast"
+
   >
+
     Saved successfully ✨
+
   </div>
+
 
 
   <!-- Page Transition -->
+
   <div
+
     class="page-transition"
+
     id="pageTransition"
+
     aria-hidden="true"
+
   >
 
+
     <div class="transition-logo">
+
       D <span>✦</span>
+
     </div>
+
 
     <div class="transition-line"></div>
 
+
   </div>
+
 
 
   <!-- SETTINGS MODAL -->
+
   <div
+
     class="modal-backdrop"
+
     id="settingsModal"
+
   >
+
 
     <div class="modal settings-modal">
 
+
       <button
+
         class="close"
+
         data-close="settingsModal"
+
       >
+
         ×
+
       </button>
 
+
       <div class="section-label">
+
         Website settings
+
       </div>
 
+
       <h2>
+
         Settings ⚙️
+
       </h2>
 
+
       <p class="settings-intro">
+
         Use these controls to personalize the birthday experience.
+
         Your changes are saved in this browser.
+
       </p>
+
 
 
       <!-- Settings Music -->
+
       <div class="settings-group">
 
+
         <h3>
+
           🎵 Music
+
         </h3>
 
+
         <p id="settingsMusicStatus">
+
           Default music: website.mp3
+
         </p>
+
 
         <label class="music-upload settings-upload">
 
+
           ＋ Add / Change Music
 
+
           <input
+
             id="settingsMusicInput"
+
             type="file"
+
             accept="audio/*"
+
             hidden
+
           >
+
 
         </label>
 
+
         <button
+
           class="outline-btn settings-btn"
+
           id="removeMusic"
+
         >
+
           Use Default Music
+
         </button>
 
+
       </div>
+
 
 
       <!-- Settings Message -->
+
       <div class="settings-group">
 
+
         <h3>
+
           💌 Birthday Message
+
         </h3>
 
+
         <p>
+
           Edit the name, message, and sender from here.
+
         </p>
 
+
         <button
+
           class="primary-btn settings-btn"
+
           id="settingsEditMessage"
+
         >
+
           Edit Birthday Message
+
         </button>
 
+
       </div>
+
 
 
       <!-- Appearance -->
+
       <div class="settings-group">
 
+
         <h3>
+
           🎀 Appearance
+
         </h3>
 
+
         <button
+
           class="outline-btn settings-btn"
+
           id="settingsTheme"
+
         >
+
           Toggle Light / Dark Mode
+
         </button>
 
+
       </div>
+
 
 
       <!-- Date -->
+
       <div class="settings-group">
 
+
         <h3>
+
           📅 Birthday Date
+
         </h3>
 
+
         <input
+
           id="settingsDate"
+
           type="date"
+
         >
 
+
       </div>
+
 
 
       <div class="modal-actions">
 
-        <button
-          class="outline-btn"
-          data-close="settingsModal"
-        >
-          Close
-        </button>
 
         <button
-          class="primary-btn"
-          id="saveSettings"
+
+          class="outline-btn"
+
+          data-close="settingsModal"
+
         >
-          Save Settings
+
+          Close
+
         </button>
+
+
+        <button
+
+          class="primary-btn"
+
+          id="saveSettings"
+
+        >
+
+          Save Settings
+
+        </button>
+
 
       </div>
 
+
     </div>
 
+
   </div>
+
 
 
   <!-- CREATOR LOGIN -->
+
   <div
+
     class="modal-backdrop"
+
     id="creatorLoginModal"
+
   >
+
 
     <div class="modal creator-login">
 
+
       <button
+
         class="close"
+
         data-close="creatorLoginModal"
+
       >
+
         ×
+
       </button>
 
+
       <div class="section-label">
+
         Private access
+
       </div>
 
+
       <h2>
+
         Creator Mode 🔐
+
       </h2>
 
+
       <p>
+
         Editing controls are private.
+
         Enter your creator password to manage this birthday website.
+
       </p>
 
+
       <label>
+
         Password
 
+
         <input
+
           id="creatorPassword"
+
           type="password"
+
           placeholder="Enter password"
+
         >
+
       </label>
 
+
       <p
+
         class="login-error"
+
         id="loginError"
+
       ></p>
+
 
       <div class="modal-actions">
 
-        <button
-          class="outline-btn"
-          data-close="creatorLoginModal"
-        >
-          Cancel
-        </button>
 
         <button
-          class="primary-btn"
-          id="creatorLogin"
+
+          class="outline-btn"
+
+          data-close="creatorLoginModal"
+
         >
-          Unlock Creator Mode
+
+          Cancel
+
         </button>
+
+
+        <button
+
+          class="primary-btn"
+
+          id="creatorLogin"
+
+        >
+
+          Unlock Creator Mode
+
+        </button>
+
 
       </div>
 
+
     </div>
 
+
   </div>
+
 
 
   <!-- CREATOR PANEL -->
+
   <div
+
     class="modal-backdrop"
+
     id="creatorPanelModal"
+
   >
+
 
     <div class="modal creator-panel">
 
+
       <button
+
         class="close"
+
         data-close="creatorPanelModal"
+
       >
+
         ×
+
       </button>
 
+
       <div class="section-label">
+
         Private dashboard
+
       </div>
 
+
       <h2>
+
         Creator Mode ⚙️
+
       </h2>
 
+
       <p class="settings-intro">
+
         Only use this area before sharing the website.
+
         Deepika will not see these controls in Visitor Mode.
+
       </p>
 
 
+
       <!-- Creator Message -->
+
       <div class="settings-group">
 
+
         <h3>
+
           💌 Birthday Message
+
         </h3>
 
+
         <p>
+
           Edit the birthday name, message, and sender.
+
         </p>
 
+
         <button
+
           class="primary-btn settings-btn"
+
           id="creatorEditMessage"
+
         >
+
           Edit Birthday Message
+
         </button>
 
+
       </div>
+
 
 
       <!-- Creator Music -->
+
       <div class="settings-group">
 
+
         <h3>
+
           🎵 Music
+
         </h3>
 
+
         <p>
+
           Add or replace the music used by the birthday experience.
+
         </p>
+
 
         <label class="music-upload settings-upload">
 
+
           ＋ Add / Change Music
 
+
           <input
+
             id="creatorMusicInput"
+
             type="file"
+
             accept="audio/*"
+
             hidden
+
           >
+
 
         </label>
 
+
         <div
+
           class="selected-track"
+
           id="creatorMusicStatus"
+
         >
+
           Default: website.mp3
+
         </div>
 
+
         <button
+
           class="outline-btn settings-btn"
+
           id="creatorRemoveMusic"
+
         >
+
           Use Default Music
+
         </button>
 
+
       </div>
+
 
 
       <!-- Creator Date -->
+
       <div class="settings-group">
 
+
         <h3>
+
           📅 Birthday Date
+
         </h3>
 
+
         <input
+
           id="creatorDate"
+
           type="date"
+
         >
 
+
       </div>
+
 
 
       <!-- Creator Photos -->
+
       <div class="settings-group">
 
+
         <h3>
+
           📸 Photos
+
         </h3>
 
+
         <p>
+
           Photos are optional.
+
           Add them from the Moments section when preparing the site.
+
         </p>
 
+
       </div>
+
 
 
       <!-- Creator Actions -->
+
       <div class="modal-actions">
 
-        <button
-          class="outline-btn"
-          id="previewVisitor"
-        >
-          Preview Visitor Mode
-        </button>
 
         <button
-          class="primary-btn"
-          id="saveCreator"
+
+          class="outline-btn"
+
+          id="previewVisitor"
+
         >
-          Save & Lock
+
+          Preview Visitor Mode
+
         </button>
+
+
+        <button
+
+          class="primary-btn"
+
+          id="saveCreator"
+
+        >
+
+          Save & Lock
+
+        </button>
+
 
       </div>
 
+
     </div>
 
+
   </div>
+
 
 
   <!-- Creator Badge -->
+
   <div
+
     class="creator-badge"
+
     id="creatorBadge"
+
   >
+
     CREATOR MODE · PRIVATE
+
   </div>
 
 
+
   <!-- Existing JavaScript -->
+
   <script src="script.js"></script>
 
 
+
   <!-- CLICK / TOUCH ANYWHERE MUSIC -->
+
   <script>
+
     (function () {
+
 
       let musicStarted = false;
 
+
       function startBirthdayMusic() {
+
 
         if (musicStarted) return;
 
+
         const audio = document.getElementById("audio");
+
 
         if (!audio) return;
 
+
         audio.volume = 0.5;
 
+
         audio.play()
+
           .then(function () {
+
 
             musicStarted = true;
 
+
             const prompt =
+
               document.getElementById("musicStartPrompt");
 
+
             if (prompt) {
+
               prompt.style.display = "none";
+
             }
+
 
             const musicFloat =
+
               document.getElementById("musicFloat");
 
+
             if (musicFloat) {
+
               musicFloat.classList.add("playing");
+
             }
 
+
           })
+
           .catch(function (error) {
 
+
             console.log(
+
               "Music playback was blocked:",
+
               error
+
             );
+
 
           });
 
+
       }
 
+
       document.addEventListener(
+
         "pointerdown",
+
         startBirthdayMusic,
+
         {
+
           once: false,
+
           passive: true
+
         }
+
       );
 
+
       const prompt =
+
         document.getElementById("musicStartPrompt");
+
 
       if (prompt) {
 
+
         prompt.addEventListener(
+
           "keydown",
+
           function (event) {
 
+
             if (
+
               event.key === "Enter" ||
+
               event.key === " "
+
             ) {
+
 
               event.preventDefault();
 
+
               startBirthdayMusic();
+
 
             }
 
+
           }
+
         );
+
 
       }
 
+
     })();
+
   </script>
 
+
 </body>
+
 </html>
